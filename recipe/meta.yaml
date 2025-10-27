@@ -1,5 +1,5 @@
 {% set name = "dranspose" %}
-{% set version = "0.1.1" %}
+{% set version = "0.2.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 948d1aa934387cc43251c933401fe672cad4c416a4154fd697a63fdb8c5f23fb
+  sha256: 32271c83067438726755f87430feb783f2eaacae80f52eb4312ca730434905af
 
 build:
   entry_points:
@@ -32,9 +32,9 @@ requirements:
     - numpy
     - pydantic
     - pydantic-settings
-    - jsonpath-ng
     - cbor2
     - redis-logs
+    - h5py
 
 test:
   imports:
